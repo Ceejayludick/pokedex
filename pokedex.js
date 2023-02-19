@@ -29,6 +29,9 @@ function logic() {
         // Create pokemon object here (const pokemon) using user input Strings
 
 
+        const pokemon = {name: name, type:type, region:region, }; console.log(pokemon); 
+
+
         // Create a span element (const pokemonData) and put the pokemon objects properties inside of it
 
 
@@ -39,6 +42,16 @@ function logic() {
 
 
         // Give pokedexEntry (li) a new class equal to the "type" property of the pokemon object
+        let newli = 
+        '
+        <li class="${pokemon[1]}">
+
+        <span>Name: %{pokemon[0]} </span>
+        <span> Type: ${pokemon[1]}</span>
+        <span>Generation: ${pokemon[2]}</span>
+    
+        </li>
+        '
 
 
         // Creating a preview button (using a Template Literal)
